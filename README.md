@@ -1,17 +1,26 @@
-# Certificate Validation System
+# Sistem Validasi Sertifikat Berbasis Blockchain
 
-A blockchain-based certificate validation system that uses MD5 hashing to verify certificate authenticity.
+Sistem validasi sertifikat menggunakan teknologi blockchain dengan fitur hash MD5 untuk memverifikasi keaslian sertifikat.
 
-## Features
+## Fitur
 
-- Certificate upload and validation
-- MD5 hash verification
-- Blockchain-based validation
-- Secure database storage
-- Real-time validation results
+- Upload sertifikat (PDF, DOCX, JPG, PNG)
+- Generasi hash MD5 otomatis
+- Validasi sertifikat dengan database
+- Preview gambar sertifikat
+- Interface yang responsif
 
-## Installation
+## Teknologi yang Digunakan
 
-1. Clone the repository:
-   ```bash
-   git clone https://github.com/yourusername/certificate-validation.git
+- HTML5
+- CSS3
+- JavaScript
+- PHP
+- MySQL
+- SparkMD5 Library
+
+## Instalasi
+
+1. Clone repository
+```bash
+git clone https://github.com/username/validasi-sertifikat.git
