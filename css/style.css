@@ -1,0 +1,231 @@
+/* CSS ala Apple Website dengan Background Gambar di Body dan Box */
+body {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+    background-image: url("foto2.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    color: #1d1d1f;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+.navbar {
+    height: 60px;
+    background-color: #0071e3;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.navbar .logo img {
+    width: 45px;
+}
+
+.nav ul {
+    display: flex;
+    justify-content: space-around;
+    padding: 0;
+    list-style: none;
+}
+
+.nav ul li {
+    margin: 0 15px;
+}
+
+.nav ul li a {
+	text-decoration: none;
+	color: white;
+	padding: 8px;
+	border-radius: 5px;
+}
+.nav ul li a:hover {
+	background-color: #ff5090;
+}
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+	gap: 50px;
+    background-color: #FFDEE9;
+    background-image: linear-gradient(135deg, #ebacc1 0%, #7cebe7 100%);
+    padding: 20px;
+    border-radius: 15px;
+    max-width: 1200px;
+    margin: 20px auto;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.container .info img {
+    width: 80%;
+    max-width: 400px;
+    margin-bottom: 20px;
+}
+
+.container .text h1 {
+    font-size: 2rem;
+    font-weight: 700;
+    color: #ffffff;
+    text-align: center;
+    margin-bottom: 20px;
+    letter-spacing: -1px;
+    font-family: "poppins", sans-serif;
+}
+
+.container .text p {
+    font-size: 1.2rem;
+    color: #333;
+    line-height: 1.5;
+    margin-bottom: 20px;
+}
+
+button.cek {
+    background-color: #0071e3;
+    color: #ffffff;
+    border: none;
+    padding: 15px 25px;
+    font-size: 18px;
+    font-weight: 500;
+    border-radius: 8px;
+    cursor: pointer;
+    margin-top: 20px;
+    transition: background-color 0.3s ease;
+}
+
+button.cek:hover {
+    background-color: #005bb5;
+}
+
+.container-cek {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    margin-top: 50px;
+    background-color: rgba(255, 255, 255, 0.95);
+    border-radius: 15px;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
+    max-width: 1000px;
+    margin: 50px auto;
+}
+
+.container-cek .form {
+    width: 80%;
+    max-width: 400px;
+    margin-bottom: 40px;
+    background-color: #f9f9f9;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.container-cek .result {
+    text-align: center;
+}
+
+.container-cek .result img {
+    width: 100%;
+    max-width: 600px;
+    margin-bottom: 20px;
+    border-radius: 10px;
+    border: 2px solid #0071e3;
+}
+
+input[type="file"], button[type="submit"] {
+    width: 100%;
+    padding: 15px;
+    margin-bottom: 20px;
+    font-size: 16px;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+    transition: border-color 0.3s ease;
+}
+
+input[type="file"]:hover, button[type="submit"]:hover {
+    border-color: #0071e3;
+}
+
+button[type="submit"] {
+    background-color: #0071e3;
+    color: #ffffff;
+    border: none;
+    cursor: pointer;
+}
+
+button[type="submit"]:hover {
+    background-color: #005bb5;
+}
+
+.about {
+    padding: 40px 20px;
+    background-color: #183648;
+    color: white;
+}
+
+.about h5 {
+    font-size: 1.8rem;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.about .wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 900px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.about .kiri img {
+    width: 80%;
+    max-width: 400px;
+    margin-bottom: 20px;
+}
+
+.about p {
+    font-size: 1.2rem;
+    line-height: 1.6;
+    margin-bottom: 20px;
+}
+
+/* Responsiveness */
+@media (min-width: 768px) {
+    .container {
+        flex-direction: row;
+        text-align: left;
+    }
+
+    .container .info, .container .text {
+        width: 50%;
+    }
+
+    .container .text {
+        text-align: left;
+    }
+
+    .container-cek {
+        flex-direction: row;
+        align-items: flex-start;
+        padding: 50px;
+    }
+
+    .container-cek .form, .container-cek .result {
+        width: 50%;
+    }
+
+    .about .wrapper {
+        flex-direction: row;
+        text-align: left;
+    }
+}

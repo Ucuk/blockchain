@@ -1,0 +1,14 @@
+
+4. Database Script (database/certificate_validation.sql):
+```sql
+CREATE DATABASE IF NOT EXISTS certificate_validation;
+USE certificate_validation;
+
+CREATE TABLE IF NOT EXISTS valid_certificates (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    certificate_name VARCHAR(255) NOT NULL,
+    md5_hash CHAR(32) NOT NULL,
+    upload_date TIMESTAMP DEFAULT CURRENT_TIMESTAMP
+);
+
+CREATE INDEX idx_md5_hash ON valid_certificates (md5_hash);

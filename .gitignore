@@ -1,0 +1,16 @@
+# Dependencies
+/node_modules
+
+# Environment variables
+.env
+
+# Database configuration
+config.php
+
+# Operating System Files
+.DS_Store
+Thumbs.db
+
+# IDE Files
+.idea/
+.vscode/
